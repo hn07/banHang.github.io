@@ -1,4 +1,5 @@
 :root {
+    --primary_color: #ee4d2d;
     --while__color: #fff;
     --black__color: #000;
     --text__color: #333;
@@ -36,4 +37,16 @@ html {
     margin-right: 10px;
     border: 5px;
     text-decoration: none;
+}
+
+
+/* animation */
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
