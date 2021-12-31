@@ -109,15 +109,50 @@
 
 .header__notify {
     position: absolute;
-    /* display: flex; */
-    top: 100%;
+    top: 150%;
+    border-radius: 5px;
     right: 0;
     width: 404px;
     background-color: #fff;
     border: 1px solid #d8d8d8;
     box-shadow: 0 0 5px #a8a7a7;
     display: none;
-    animation: FadeIn linear 0.3s;
+    transform-origin: right top;
+    animation: headerNotify ease-out 0.3s;
+}
+
+.header__notify::before {
+    content: "";
+    border-width: 20px 30px;
+    position: absolute;
+    border-style: solid;
+    border-color: transparent transparent var(--while__color) transparent;
+    right: 14px;
+    top: -30px;
+}
+
+
+/* tạo hình tam giác tên notify */
+
+.header__notify::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: -16px;
+    width: 100%;
+    height: 20px;
+}
+
+@keyframes headerNotify {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .header__nav-list-item--has_notification:hover .header__notify {
@@ -128,6 +163,7 @@
     height: 40px;
     font-size: 1.8rem;
     background-color: var(--while__color);
+    cursor: default;
 }
 
 .header__notify-header h3 {
