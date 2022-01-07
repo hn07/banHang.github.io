@@ -41,7 +41,7 @@
 }
 
 .header__nav-user-name {
-    margin-left: 8px;
+    margin-left: 6px;
     color: var(--while__color);
     font-size: 1.6rem;
     font-weight: 1.6rem;
@@ -721,4 +721,44 @@
 .search-history-item:hover {
     background-color: aqua;
     cursor: pointer;
+}
+
+
+/* category */
+
+.category {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.category-list {
+    padding: 0;
+}
+
+.category-item {
+    padding: 12px 16px;
+}
+
+.category-item-icon {
+    display: none;
+    color: var(--primary_color);
+    margin-left: 5px;
+}
+
+.category-item:hover .category-item-icon,
+.category-item:hover .category-item_link,
+.category-item:hover {
+    color: var(--primary_color);
+    cursor: pointer;
+    background-color: #faf3f3;
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.category-item_link {
+    text-decoration: none;
+    color: var(--black__color);
+    font-size: 1.4rem;
 }

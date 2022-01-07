@@ -30,6 +30,8 @@ html {
 .grid_row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
 
 .header__nav-list-icon-link {
@@ -38,6 +40,21 @@ html {
     margin-right: 10px;
     border: 5px;
     text-decoration: none;
+}
+
+
+/* test */
+
+.grid_column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid_column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
 }
 
 
@@ -109,4 +126,29 @@ html {
 .btn.btn--primary {
     color: var(--while__color);
     background-color: var(--primary_color);
+}
+
+
+/* container */
+
+.app_container {
+    background-color: #d5d8e1;
+}
+
+.category {
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.category__headind {
+    color: var(--text__color);
+    font-size: 1.8rem;
+    padding: 12px 16px;
+    border-bottom: 2px solid rgba(230, 220, 220, 0.7);
+}
+
+.category__headind-icon {
+    padding-right: 10px;
+    position: relative;
+    top: 1px;
 }
