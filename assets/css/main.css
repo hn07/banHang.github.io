@@ -726,9 +726,11 @@
 
 /* category */
 
+.app_container {
+    padding: 16px 0;
+}
+
 .category {
-    border: 2px solid rgba(255, 255, 255, 0.7);
-    margin-top: 8px;
     margin-bottom: 8px;
 }
 
@@ -743,7 +745,7 @@
 .category-item-icon {
     display: none;
     color: var(--primary_color);
-    margin-left: 5px;
+    margin-left: 8px;
 }
 
 .category-item:hover .category-item-icon,
@@ -754,11 +756,105 @@
     background-color: #faf3f3;
     display: flex;
     align-items: center;
-    margin-right: 4px;
 }
 
 .category-item_link {
     text-decoration: none;
     color: var(--black__color);
     font-size: 1.4rem;
+}
+
+
+/* grid_column-10 */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 2px;
+}
+
+.home_filter {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.home_filter__label {
+    font-size: 1.4rem;
+    color: var(--black__color);
+    margin-right: 16px;
+}
+
+.home_filter_btn {
+    min-width: 90px;
+    margin: 0 5px;
+}
+
+.select_option::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 20px;
+}
+
+.select_option {
+    display: none;
+}
+
+.select-input:hover .select_option {
+    display: block;
+}
+
+.select-input_item {
+    background-color: #efefef;
+    padding: 12px 24px;
+}
+
+.select-input_item:hover,
+.select-input_item:hover .select-input_link {
+    background-color: var(--primary_color);
+    cursor: pointer;
+    color: var(--while__color)
+}
+
+.select-input_link {
+    font-size: 14px;
+    color: var(--text__color);
+    text-decoration: none;
+}
+
+
+/* home_filter__pag */
+
+.home_filter__page-num {
+    margin-right: 16px;
+}
+
+.home_filter__page-current {
+    font-size: 1.4rem;
+    color: var(--primary_color);
+}
+
+.home_filter__page {
+    display: flex;
+    align-items: center;
+}
+
+.home_filter__page-control {
+    line-height: 32px;
+}
+
+.home_filter__page-btn {
+    width: 40px;
+    height: 50px;
+}
+
+.home_filter-icon {
+    font-size: 1.6rem;
+    line-height: 20px;
 }

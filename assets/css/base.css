@@ -109,7 +109,7 @@ html {
     outline: none;
     cursor: pointer;
     color: var(--text__color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -132,7 +132,7 @@ html {
 /* container */
 
 .app_container {
-    background-color: #d5d8e1;
+    background-color: #f5e2e2;
 }
 
 .category {
@@ -151,4 +151,39 @@ html {
     padding-right: 10px;
     position: relative;
     top: 1px;
+}
+
+
+/* select */
+
+.select-input {
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.select-input_label {
+    font-size: 1.4rem;
+}
+
+.select-input_icon {
+    font-size: 1.4rem;
+    position: absolute;
+    align-items: center;
+    right: 14px;
+    color: var(--text__color);
+}
+
+.select-input_list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    background-color: #efefef;
 }
