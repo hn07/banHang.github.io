@@ -858,3 +858,123 @@
     font-size: 1.6rem;
     line-height: 20px;
 }
+
+
+/* product  */
+
+.home-product-item {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--while__color);
+    border: 1px solid #a8a7a7;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0.0625rem 0.125rem 0px;
+    transition: transform linear 0.01s;
+}
+
+.home-product-item:hover {
+    transform: translateY(-2px);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0.0925rem 0.125rem 0px;
+}
+
+.home-product-item-img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.home-product-item_name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text__color);
+    line-height: 1.8rem;
+    height: 3.6rem;
+    margin: 10px 10px 4px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.home-product-item_price {
+    display: flex;
+    padding-left: 10px;
+    align-items: baseline;
+}
+
+.home-product-item_price-old {
+    font-size: 1.2rem;
+    color: var(--text__color);
+    text-decoration: line-through;
+}
+
+.home-product-item_price-current {
+    font-size: 1.6rem;
+    color: var(--primary_color);
+    margin-left: 4px;
+}
+
+.home-product-item-action {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-product-item-like {
+    font-size: 1.3rem;
+    color: red;
+}
+
+.home-product-item-star {
+    font-size: 1.2rem;
+    margin-left: auto;
+}
+
+.home-product-item-star-gold {
+    color: gold;
+}
+
+.home-product-item-soid {
+    align-items: center;
+    font-size: 1.3rem;
+    margin-left: 3px;
+}
+
+.home-product-item-origin {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 10px;
+    font-size: 1rem;
+    color: var(--text__color);
+}
+
+.home-product-item-origin-brand {}
+
+.home-product-item-origin-name {}
+
+.home-product-item-favorite {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    background-color: var(--primary_color);
+    color: var(--while__color);
+    line-height: 1.6rem;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.home-product-item-favorite::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    border-top: 4px solid #000;
+    border-left: 4px solid transparent;
+}
