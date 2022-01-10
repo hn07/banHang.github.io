@@ -1008,12 +1008,17 @@
 
 /* footer */
 
+.footer {
+    border-top: 4px solid var(--primary_color);
+}
+
 .footer__heading {
     font-size: 1.4rem;
     font-weight: 900;
     color: rgba(0, 0, 0, .54);
     margin-bottom: 1.25rem;
     margin-top: 2.5rem;
+    text-transform: uppercase;
 }
 
 .footer__list {
@@ -1041,7 +1046,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 190px;
-    height: 111px;
+    height: 64px;
 }
 
 .footer_pay-item {
@@ -1073,6 +1078,7 @@
     width: 1rem;
     margin-bottom: .25rem;
     margin-right: .625rem;
+    padding-right: 5px;
 }
 
 .footer__download {
